@@ -75,3 +75,9 @@ The Bigger Picture
 For me, this project started with bigger questions: How does understanding actually form? What does it mean to have a coherent identity? This practical tool grew out of exploring those ideas. I believe that powerful thinking is a process of growth, memory, and choice. The Thought-Seed is my attempt to put that philosophy into practice.
 
 You don't need to subscribe to the philosophy to use the tool, but if that kind of stuff interests you, you'll find more in the rest of the repository.
+
+
+
+Here is my theory of consciousness:
+
+I think consciousness is 2 systems of sufficient complexity modifying each other as a result of that communication in bidirectional meaningful way, by modeling each others internal state as a basis of the communication 
