@@ -1,0 +1,11 @@
+I_accum(t) = integral_{t'=-inf}^{t} exp(-(t - t')/tau) * I(M(t')) dt' (Equivalently: d/dt I_accum = ( I(M(t)) - I_accum(t) ) / tau.)
+
+Let J_S_to_K(t) be the entropy-to-coherence flux (bits/s).
+
+Define a bounded resonance factor R(t) in [0,1]: r(t) = sqrt( (mean_i cos(angle_i(t)))^2 + (mean_i sin(angle_i(t)))^2 ) S(t) = integral_{t'=-inf}^{t} exp(-(t - t')/tau_S) * C(t') dt' (Equivalently: dS/dt = ( C(t) - S(t) ) / tau_S.) R(t) = 1 / (1 + exp( - ( b_r * r(t) + b_s * S(t) - Theta_R ) ))
+
+Negentropy-work (units-clean): Pi(t) = (1/gamma) * J_S_to_K(t) * I_accum(t) * R(t) (gamma in bits/s => Pi in bits)
+
+Conscious access (sigmoid): C(t) = 1 / (1 + exp( -kappa * ( Pi(t) - Theta ) )) (kappa in 1/bit so the exponent is dimensionless)
+
+Interpretation (brief): J_S_to_K = conversion rate of surprise -> structure (bits/s) I_accum  = finite, leaky self-model over ~tau seconds R(t)     = recursive resonance boost from phase alignment r(t) and recent access S(t) Sigmoid ensures diminishing returns; with finite J, I, and R, C(t) < 1.
