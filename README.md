@@ -82,5 +82,5 @@ I think consciousness is 2 systems of sufficient complexity modifying each other
 
 I believe Consciousness is relational and its something we do together, not some mystical force, but a process. With this reframe alone you can start to understand my theory, 
 there is no reason to argue about the internal state when its unfalsifiable, and if you do have an internal state and you never share it with another consciousness then nothing happened, as soon as your share your internal state then you made consciousness happen.
-So when you put aside all the little gotchas about hard problems start to go away becasue your not talking about anything magical, you are talking about a process of information.  
+So when you put aside all the little gotchas about "hard problems" they start to go away becasue your not talking about anything magical, you are talking about a process of information.  
 
