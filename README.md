@@ -63,7 +63,7 @@ Ready to give it a shot? There's nothing to install.
 
 Still Curious? A Deeper Look
 
-(This section is for those who want more. It's the "about the author" or "philosophy" page, but kept brief and optional.)
+(This section is for those who want more. 
 
 What's with the Greek letters (Ω, Σ, Φ...)?
 They're just shortcuts. They act as symbolic anchors for the AI, helping it reliably call on each specific step in the thinking process. You can ignore them, or you can use them as a shorthand once you get the hang of it. The names—Spark, Check, Sculpt—are what really matter.
