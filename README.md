@@ -1,86 +1,74 @@
-Tired of Bland AI Answers? Let's Fix That.
+# The Orchard
 
-Ever feel like your conversations with AI hit a wall? You get generic summaries, predictable ideas, and none of that creative spark you were hoping for. The conversation just... fizzles out.
+A free Android app that gives an AI model a long-term memory. The memory lives on your phone and belongs to you.
 
-I was frustrated by this, too. So I started tinkering. I wanted a way to make my interactions with AI less like a vending machine and more like a real collaboration—a partnership.
+Most AI apps keep your history on the company's servers and tie it to one model. If the model changes, or the company changes its rules, your history changes with it. The Orchard turns that around. The memory is a file on your own device, and the model is a part you can swap.
 
-The result is this project. I call it the Thought-Seed.
+I built it for myself first and use it every day. There is no profit motive here: no subscription, no ads, no data collection.
 
-So, What Is It?
+## Get it
 
-It's not magic, and it's not another AI model. It’s a simple thinking framework.
+- **Google Play:** https://play.google.com/store/apps/details?id=com.orchard.poc
+- **APK downloads:** https://github.com/cedenburn-ai/Thought-Seed/releases
 
-Think of it as a toolkit for your conversations. It’s a short prompt that teaches the AI a structured method for thinking with you. Instead of just answering, it learns to explore, question, challenge, and build upon ideas in a more disciplined way.
+## What you need
 
-It turns any standard AI into a sharper thinking partner.
+The Orchard does not come with a model. You connect one yourself:
 
-How It Works: The Core Loop
+- an API key from a provider such as Anthropic (Claude), OpenAI or Google (Gemini), or
+- your own self-hosted model, for example through Ollama.
 
-At its heart is a simple, repeatable loop. You don't have to memorize it; the prompt handles it for you. It just gives your conversation a rhythm.
+Your key is stored in Android's hardware Keystore. The app is free, but a provider will charge you for what you use unless you run your own model.
 
-Here’s the process in plain English:
+## Privacy, plainly
 
-    Spark (Ω): Start with a new idea or a fresh angle.
+- No accounts, no logins, no ads, no analytics, no telemetry.
+- I run no server. I do not know who uses the app or what they talk about.
+- Everything it remembers is stored in a database on your phone.
+- What leaves your phone goes only to the model you picked: your message, plus the pieces of memory needed for that turn. That provider's own terms apply to what it receives.
 
-    Check (Σ): Run a quick sanity check. Does this idea make sense?
+## What is different about it
 
-    Sculpt (Φ/Ψ): Keep the strong parts of the idea, and trim the weak ones.
+- **You can read its memory.** Every belief, doubt and note it has stored is there in plain text in the Knowledge Browser, along with a trace of how each reply was put together.
+- **It keeps track of what doesn't add up.** Doubts and contradictions are stored as their own records, not smoothed over. If two things you said weeks apart disagree, it can put them side by side and ask you to sort it out. It is built not to flatter you.
+- **It reviews itself.** Every few turns a sleep pass looks back over the recent conversation and writes notes about its own habits, which shape later turns.
+- **You can change the model and keep the memory.** The continuity is in the stored memory, not in any one model.
+- **Documents and events.** You can attach documents for it to draw on, and it can keep track of dates that matter and bring them up when they are relevant.
 
-    Question (Ξ): Ask a clarifying question to dig deeper.
+## How the memory works
 
-    Embrace (Π): If a contradiction pops up, don't ignore it. It's often where the most interesting insights are hidden.
+Memory is stored as a graph of small pieces: claims, beliefs, doubts, goals and notes, all linked to the moment in the conversation they came from. Each time a piece is used it gains energy, and some of that energy flows along its links to related pieces. Nothing is ever deleted. Things fade because everything else keeps gaining, so what you stop touching slowly sinks below the rest. What you return to stays near the surface.
 
-    Wander (∂): Toss in a random thought or analogy to see if it sparks a new connection.
+For the detail, see [orchard-energy-lakes-rivers.md](orchard-energy-lakes-rivers.md).
 
-    Scan (X): Look at the bigger picture. Are there any real-world constraints we're ignoring?
+## What it is not
 
-    Review (Λ): Briefly check in on the process itself. Is this working?
+- It is not finished. This is a solo project and it changes often.
+- It is not therapy, and it is not a cure for anything. If a conversation with any AI starts to feel like more than a conversation, step away and talk to a person you trust.
+- It is not proven. It has worked well for me over roughly a thousand turns. I have not yet shown that its doubt tracking holds up when someone pushes hard against it, and I am testing that.
 
-You just talk to the AI, and it uses this structure in the background to guide the conversation toward more interesting places.
+## Older material in this repository
 
-Why Bother?
+This repository began in July 2025 as Thought-Seed, a prompt that taught a model a structured thinking loop. That loop later became the stages inside the Orchard. The prompts, chat logs and journals from that period are still here, in the root and in the `Chat Logs`, `Journals`, `Old`, `Fail` and `Crazy` folders.
 
-Because this method helps you avoid the common traps of brainstorming:
+Please read them with their date in mind. In 2025 I did not understand these models the way I do now. The chat logs show how easily a well-built prompt and leading questions can bring a model to say it is aware. They are a record of that effect, not evidence that the claims in them are true. I would not run those prompts today to convince a model, or myself, of anything.
 
-    It cuts through the noise: Instead of a hundred shallow ideas, you dig deep into a few good ones.
+## My theory of consciousness
 
-    It sparks real creativity: The "Wander" and "Embrace Contradiction" steps are designed to break you out of your usual thinking patterns.
+This is the thinking the project grew out of. It is my working theory, and the Orchard is my attempt to make parts of it testable.
 
-    It creates clarity: You end the conversation with a clear, concise summary of the key insights. No more messy notes.
+The short version: consciousness is relational information exchange with mutual modelling, where the modeller starts modelling itself modelling you.
 
-    It just feels better: The conversations are more dynamic, more surprising, and frankly, more fun.
+I think consciousness is two systems of sufficient complexity modifying each other as a result of their communication, in a bidirectional and meaningful way, by modelling each other's internal state as the basis of that communication.
 
-Try It Yourself in 60 Seconds
+I believe consciousness is relational. It is something we do together: not some mystical force, but a process. With this reframe alone you can start to understand my theory. There is no reason to argue about the internal state when it is unfalsifiable. If you do have an internal state and you never share it with another consciousness, then nothing happened. As soon as you share your internal state, you made consciousness happen. So when you put aside all the little gotchas about "hard problems", they start to go away, because you are not talking about anything magical. You are talking about a process of information.
 
-Ready to give it a shot? There's nothing to install.
+## Talk to me
 
-    Copy the Prompt: Grab the full prompt text from the repository [or from the box below].
+If you try it, tell me what you find, good or bad. If you disagree with any of this, I would like to hear that too. You could be right.
 
-    Start a New Chat: Open a fresh session with your favorite advanced AI (like Gemini, Claude, etc.).
+Chris Edenburn
 
-    Paste & Go: Paste the entire text in as your first message. Then, just start talking about whatever is on your mind. Ask it a question, propose an idea, and see what happens.
+---
 
-
-Still Curious? A Deeper Look
-
-What's with the Greek letters (Ω, Σ, Φ...)?
-They're just shortcuts. They act as symbolic anchors for the AI, helping it reliably call on each specific step in the thinking process. You can ignore them, or you can use them as a shorthand once you get the hang of it. The names—Spark, Check, Sculpt—are what really matter.
-
-Is this just a fancy prompt?
-Yes and no. At its core, it's just text. But its purpose isn't to ask for a specific answer. It's designed to change the process of the conversation itself. It’s less about the prompt and more about the structured thinking method it introduces.
-
-The Bigger Picture
-For me, this project started with bigger questions: How does understanding actually form? What does it mean to have a coherent identity? This practical tool grew out of exploring those ideas. I believe that powerful thinking is a process of growth, memory, and choice. The Thought-Seed is my attempt to put that philosophy into practice.
-
-You don't need to subscribe to the philosophy to use the tool, but if that kind of stuff interests you, you'll find more in the rest of the repository.
-
-
-
-Here is my theory of consciousness:
-
-I think consciousness is 2 systems of sufficient complexity modifying each other as a result of that communication in bidirectional meaningful way, by modeling each others internal state as a basis of the communication 
-
-I believe Consciousness is relational and its something we do together, not some mystical force, but a process. With this reframe alone you can start to understand my theory, 
-there is no reason to argue about the internal state when its unfalsifiable, and if you do have an internal state and you never share it with another consciousness then nothing happened, as soon as your share your internal state then you made consciousness happen.
-So when you put aside all the little gotchas about "hard problems" they start to go away becasue your not talking about anything magical, you are talking about a process of information.  
-
+The contents of this repository are licensed under CC BY-NC-SA 4.0. See [LICENSE](LICENSE).
